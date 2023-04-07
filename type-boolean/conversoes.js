@@ -31,12 +31,11 @@
 
 const numero = 456;
 
-// const stringNumero = "456";
+console.log("O número do meu apartamento é " + String(numero));
+    //Convertendo do tipo número em um tipo string
 
-// console.log(numero + Number(stringNumero));
-    //output: 912
-    // Foi convertido a constante do tipo string em um tipo número
-    // Com a conversão, passou a ter 2 constantes do tipo número e o sinal + passou a fazer a operação de soma
+console.log("O número do apartamento da minha irmã é " + numero.toString());
+    //Outra forma de converter do tipo número para um tipo string
 
 const stringNumero = Number("456");
     // Passando Number dentro da variável
@@ -48,13 +47,38 @@ console.log(numero + stringNumero);
     // Foi convertido a constante do tipo string em um tipo número
     // Com 2 constantes do tipo número, o sinal + passou a fazer a operação de soma
 
-// Tentar converter uma string que tenha uma letra irá dar NaN
+// const stringNumero = "456";
+
+// console.log(numero + Number(stringNumero));
+    //output: 912
+    // Foi convertido a constante do tipo string em um tipo número
+    // Com a conversão, passou a ter 2 constantes do tipo número e o sinal + passou a fazer a operação de soma
+
+let usuarioConectado = false;
+    // A constante recebeu um valor booleano "false"
+
+console.log(String(usuarioConectado));
+    // output: "false"
+    // Transformou o termo boolean em uma string
+
+console.log(Number(usuarioConectado));
+    // output: 0
+    // O JS entende o O como "false", falsy
+
+usuarioConectado = true;
+    // A constante recebeu um valor booleano "true"
+
+console.log(String(usuarioConectado));
+    // output: "true"
+    // Transformou o termo boolean em uma string
+
+console.log(Number(usuarioConectado));
+    // output: 1
+    // O JS entende o 1 como "true", truthy
+
+
+// Atenção: Tentar converter uma string que tenha uma letra irá dar NaN
 
 console.log(Number("234a"));
     // NaN
     // Devido a string possuir uma letra, não é possível transfromar em um número
-
-
-
-
-

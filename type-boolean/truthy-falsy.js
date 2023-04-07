@@ -21,3 +21,20 @@ console.log("" == false);
 console.log(1 == true);
     // output: true
     // 1 é igual ao true
+
+
+// Demonstando que o JS comprende o 1 como truthy e o 0 como falsy
+
+let usuarioConectado = false;
+    // A constante recebeu um valor booleano "false"
+
+console.log(Number(usuarioConectado));
+    // output: 0
+    // O JS entende o O como "false", falsy
+
+usuarioConectado = true;
+    // A constante recebeu um valor booleano "true"
+
+console.log(Number(usuarioConectado));
+    // output: 1
+    // O JS entende o 1 como "true", truthy
